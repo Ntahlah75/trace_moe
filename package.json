@@ -1,0 +1,19 @@
+{
+  "name": "trace_moe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@androz2091/insta.js": "^1.5.1",
+    "@types/node": "^14.6.4",
+    "axios": "^0.20.0",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.1"
+  }
+}
