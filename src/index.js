@@ -6,6 +6,7 @@ const client = new Client({ disableReplyPrefix: true });
 
 readdirSync('./src/handler/').forEach(file => {
     client.on(file.split('.')[0], (...args) => require(`./handler/${file}`)(client, ...args));
+    console.log(file);
 });
 
 client.login(process.env.IG_USERNAME, process.env.IG_PASSWORD);
