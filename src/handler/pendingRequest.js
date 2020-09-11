@@ -1,3 +1,3 @@
-module.exports = async (chat) => {
+module.exports = async (client, chat) => {
     chat.approve();
 }
