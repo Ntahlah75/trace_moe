@@ -1,12 +1,12 @@
-require('dotenv').config(); // Memuat file .env
-const { Client } = require('@androz2091/insta.js');
+require('dotenv').config();
 const { readdirSync } = require('fs');
+const { Client } = require('@androz2091/insta.js');
 
-const client = new Client({ disableReplyPrefix: true });
+const bot = new Client({ disableReplyPrefix: true });
 
-readdirSync('./src/handler/').forEach(file => {
-    client.on(file.split('.')[0], (...args) => require(`./handler/${file}`)(client, ...args));
-    console.log(file);
+readdirSync('./src/events/').forEach(file => {
+    bot.on(file.split('.')[0], (...args) => require(`./events/${file}`)(bot, ...args));
+    console.log(`Memuat events ${file.split('.')[0]}`);
 });
 
-client.login(process.env.IG_USERNAME, process.env.IG_PASSWORD);
+bot.login(process.env.IG_USERNAME, process.env.IG_PASSWORD);

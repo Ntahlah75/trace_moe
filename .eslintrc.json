@@ -1,0 +1,22 @@
+{
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 2019
+    },
+    "rules": {
+        "semi": "error",
+        "eqeqeq": "error",
+        "quotes": ["error", "single"],
+        "block-scoped-var": "error",
+        "no-empty-function": "warn",
+        "require-await": "warn",
+        "no-empty": "error",
+        "no-unused-vars": "error",
+        "no-use-before-define": "error",
+        "no-var": "warn"
+    }
+}
