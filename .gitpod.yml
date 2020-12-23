@@ -3,4 +3,4 @@ image:
 
 tasks:
   - init: npm install
-    command: pm2 start src/index.js
+    command: npm run start
